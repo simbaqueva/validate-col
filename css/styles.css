@@ -1,0 +1,488 @@
+/* Hoja de estilos modificables connect básico*/
+
+/*Definiciones*/
+
+
+/* Los siguientes estilos corresponde a el contenedor general, aqui modifique color de fondo.color de fuente Etc... */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.body-content {
+    background-color: #f4f4f4;
+    background-image: none;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    color: #6e6e6e;
+    padding-bottom: 0px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Los siguientes estilos corresponde al header, aqui modifique lo correspondiente a esta sección */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.header{
+    background: #fff;
+    padding: 1rem;
+}
+.header .img-top{
+                    text-align: right;
+                        top: 26px;
+                        left: 138px;
+                    
+                }
+.header .logo{
+    text-align: left;
+}
+.header .banner{
+    text-align: center;
+}
+
+header .banner-header {
+    max-width: 1170px;
+    margin:24px auto;
+    padding: 0px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    header a {
+        flex:0 1 160px;
+    }
+
+    header a img {
+        width: 100%;
+    }
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        header nav ul li a {
+            display: block;
+            padding: 1rem;
+            background-color: transparent;
+            color:#fff;
+            margin:0px .3rem;
+            border-radius: 5px;
+            width: 110px;
+        }
+
+section.banner-formulario {
+    position: relative;
+    padding:80px 0;
+}
+
+.banner-form__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .banner-form__background:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/form-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(1) brightness(1.5);
+    filter: grayscale(1) brightness(1.5); }
+  .banner-form__background:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #161958;
+    opacity: 0.5; }
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Los siguientes estilos corresponde a el contenedor de formularios, aqui modifique color de fondo Etc... */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.step-content {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .9);
+}
+
+.body-content .desc-step {
+    font-size: 18px;
+}
+
+.body-content .step-title{
+    font-size: 16px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Los siguientes estilos corresponde al los pasos del procesop, aqui modifique lo correspondiente a esta sección */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.body-content .steps .imas{
+    border-radius: 50%;
+    background: #e1e1e1;
+}
+
+/* Definición de icono para el estado checked*/
+.body-content .steps .checked::before {
+    content: "\f058";
+}
+
+/* Definición de icono para el estado active*/
+.body-content .steps .activ::before {
+    content:"\f111";
+}
+
+/* Definición de color para el estado checked*/
+.body-content .steps .checked {
+    color: #EE3248;
+}
+
+/* Definición de color para el estado active*/
+.body-content .steps .activ {
+    color: #EE3248;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Los siguientes estilos corresponde al los campos de formulario, aqui modifique lo correspondiente a estos campos */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estado focus de campos*/
+.input__field--madoka:focus+.input__label--madoka .graphic--madoka {
+    stroke: #EE3248;
+}
+
+/* Estado campo con info*/
+.input--filled .graphic--madoka {
+    stroke: #EE3248;
+}
+
+/* Estilo para color de label en evento focus y campo con información*/
+.input__field--madoka:focus+.input__label--madoka .input__label-content--madoka,
+.input--filled .input__label-content--madoka {
+    color: #EE3248;
+}
+
+/* Estilo para color de label en evento change de las listas desplegables*/
+.body-content .color-labs{
+    color: #EE3248;
+}
+
+/* Estilo para color de borde de las listas desplegables*/
+.body-content .borde-select {
+    border-bottom: 0px solid #EE3248;
+}
+
+/* Estilo para opciones y contenido de las listas*/
+.dropdown-menu > .active > a,
+.dropdown-menu > .selected > a, 
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .selected > a:hover,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .selected > a:focus {
+    background-color: #F9F9F9;
+    color: #EE3248;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Los siguientes estilos corresponde al los radiobuttons de formulario de validacion y preguntas, aqui modifique lo correspondiente a estos campos */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilo para el color deicono y borde de la opción */
+.ac-custom label::before {
+    border: 1px solid #EE3248;
+    color: #EE3248;
+}
+
+/* Estilo para las esquinas #EE3248ondeadas de las opciones*/
+.ac-radio label::before {
+    border-radius: 50%;
+}
+
+/* Definición de icono para los estados checked */
+.ac-custom input[type="radio"]:checked+label::before {
+    content: "\f058";
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* Los siguientes estilos corresponde al los botones usados en el procespo, aqui modifique lo correspondiente a los botones */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.body-content .btn {
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+/* Estilo botón para formularios*/
+.body-content .btn-form {
+    background-color: #EE3248;
+    color: #fff;
+    border-color: #EE3248;
+}
+.body-content .btn-form:hover {
+    /*background-color: rgba(0, 128, 0, 0.61);*/
+    background-color: #CC2E2E;
+    opacity: 1;
+    border-color: #EE3248;
+
+}
+
+/* Estilo botón generico*/
+.body-content .btn-general {
+    background-color: #7d7d7d;
+    color: #fff;
+    border-color: #ccc;
+}
+.body-content .btn-general:hover {
+    background-color: rgba(125, 125, 125, .8);
+    opacity: 1;
+    border-color: #ccc;
+
+
+}
+
+/* Estilo botón para imprimir*/
+.body-content .btn-print {
+    background-color: gray;
+    color: #fff;
+    border-color: #EE3248;
+}
+.body-content .btn-print:hover {
+    background-color: rgba(226, 6, 19, .7);
+    border-color: #EE3248;
+    opacity: 1;
+}
+.body-content .btn-print::before{
+   content: "\f02f";
+}
+
+/* Estilo para icono de impresión si se desea esta opción para imprimir*/
+.body-content .cont-print{
+    background: #999;
+    padding: 4%;
+    border-radius: 10px;
+}
+.body-content .icon-print{
+    color: #fff;
+}
+.body-content .icon-print::before{
+    content: "\f02f";
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Los siguientes estilos corresponden a fuentes, titulos, textos etc... modifique aquí lo que corresponda */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilo para tíuulo de los términos y condiciones*/
+.body-content .title-term {
+    color: #e20613;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Estilo para subtítulo de los términos y condiciones*/
+.body-content .subtitle-term {
+    font-family: 'lato';
+    font-size: 16px;
+    color: #000;
+}
+
+/* Estilo para fuentes con estilo italic, afecta varios textos en la pagina*/
+.body-content .italic {
+    font-weight: bold;
+    color: inherit;
+}
+
+/* Estilo para fuentes con estilo negrita, afecta varios textos en la pagina*/
+.body-content .bolds {
+    font-weight: bold;
+    color: inherit;
+}
+
+/* Estilo para fuente de color especifico, afecta varios textos en la pagina*/
+.body-content .color-one {
+    color: #EE3248;
+    font-weight: inherit;
+    font-style: normal;
+}
+
+/* Estilo para fuente de color especifico, afecta varios textos en la pagina*/
+.step-conent .color-two {
+    color: #EE3248;
+    font-weight: inherit;
+    font-style: normal;
+}
+
+/* Estilo para fuente de color especifico, afecta varios textos en la pagina*/
+.body-content .color-thre {
+    color: #000;
+    font-weight: inherit;
+    font-style: normal;
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Los siguientes estilos corresponden a las alertas de validación de formularios, modifique aquí lo que corresponda */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.formError .formErrorContent{
+    background: #EE3248;
+    color: #fff;
+    border-radius: 6px;
+}
+.formError .formErrorArrow div{
+    background: #EE3248;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Los siguientes estilos corresponden a la sección del footer, modifique aquí lo que corresponda */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Estilo para el contenedor del footer*/
+.footer-content {
+    background: #fff;
+    padding: 24px;
+    position: relative;
+}
+
+/* Estilo para texto del footer*/ 
+.footer-content .text-foot{
+    text-align: left;
+    color: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    font-style: normal;
+}
+
+/* Estilo para imagen del footer*/ 
+.footer-content .img-foot{
+   text-align: right;
+   width: 110px;
+}
+
+
+.footer-content__container {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 48px;
+    margin: 0 auto;
+}
+    .footer-content__container span {
+        color:#000;
+    }
+
+    .footer-content__container a {
+        width: 60px;
+    }
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 750px) {
+    .body-content {
+        padding: 0% 0% 0% 0% !important;
+    }
+
+    .body-content .linea-step {
+        margin-bottom: 2%;
+    }
+
+    .body-content .desc-step {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .body-content .li-step {
+        text-align: center;
+        margin-top: 5%;
+    }
+    header .banner-header {
+        flex-direction: column;
+    }
+        header a img {
+            width: 160px;
+        }
+        header nav ul li a {
+            width: 90px;
+        }
+
+    section.banner-formulario {
+        padding:48px 0;
+    }
+}
+
+@media (max-width: 568px) {
+    .body-content {
+        padding: 0% 0% 0% 0% !important;
+    }
+        header nav ul li a {
+            width: 70px;
+        }
+
+    .body-content .desc-step {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .body-content .li-step {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .footer-content__container {
+        flex-direction: column;
+    }
+
+        .footer-content__container span {
+            display: none;
+        }
+
+        .footer-content__container a {
+            width: 60px;
+        } 
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
